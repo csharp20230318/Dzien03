@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfTest.CheckBoxRadioTest"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="CheckBoxRadioTest" Height="450" Width="800">
+    <StackPanel>
+        <CheckBox IsChecked="True">Opcja A</CheckBox>
+        <CheckBox IsEnabled="False">Opcja B</CheckBox>
+        <CheckBox>Opcja C</CheckBox>
+        <CheckBox>
+            <TextBlock>
+                Opcja D <Span Foreground="Red" FontWeight="ExtraBold"> (tylko dla wybranych)</Span>
+            </TextBlock>
+        </CheckBox>
+
+        <StackPanel Margin="10">
+            <Label>Wybór jeden z:</Label>
+            <RadioButton GroupName="G1" IsChecked="True" >TAK</RadioButton>
+            <RadioButton GroupName="G1">NIE</RadioButton>
+            <RadioButton GroupName="G1">NIE WIEM</RadioButton>
+
+            <Label>Wskaż liczbę:</Label>
+            <RadioButton GroupName="G2">0</RadioButton>
+            <RadioButton GroupName="G2">1</RadioButton>
+            <RadioButton GroupName="G2" IsChecked="True">2</RadioButton>
+        </StackPanel>
+    </StackPanel>
+</Window>

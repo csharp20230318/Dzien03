@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfTest"
         mc:Ignorable="d"
-        Title="TextBlockExample" Height="350" Width="600">
+        Title="TextBlockExample" Height="550" Width="600">
     <StackPanel>
         <TextBlock Margin="10" FontSize="20">
            Linia 1<LineBreak/>Linia 2
@@ -21,6 +21,13 @@
         </TextBlock>
         <TextBlock Margin="10" FontSize="20">
            Link do <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://alx.pl/">ALX</Hyperlink>
+        </TextBlock>
+        <TextBlock Margin="10" FontSize="20">
+            AAA <Span Foreground="Red" Background="Aquamarine">BBB</Span>
+            <Span FontStyle="Italic" FontWeight="ExtraBold">CCC</Span>
+        </TextBlock>
+        <TextBlock Name="textBlockFormat" Margin="10" FontSize="20">
+            XYZ
         </TextBlock>
     </StackPanel>
 </Window>
