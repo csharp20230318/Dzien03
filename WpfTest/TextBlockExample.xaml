@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfTest.TextBlockExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="TextBlockExample" Height="350" Width="600">
+    <StackPanel>
+        <TextBlock Margin="10" FontSize="20">
+           Linia 1<LineBreak/>Linia 2
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="10" FontSize="20" Foreground="red">
+           Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2
+        </TextBlock>
+        <TextBlock TextTrimming="CharacterEllipsis" Margin="10" FontSize="20" Foreground="green">
+           Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2 Linia 1 Linia 2
+        </TextBlock>
+        <TextBlock Margin="10" FontSize="20">
+           Normalny text <Bold>Na grubo</Bold> <Italic>Pochylony</Italic> <Underline>Podkreślony</Underline>
+        </TextBlock>
+        <TextBlock Margin="10" FontSize="20">
+           Link do <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="http://alx.pl/">ALX</Hyperlink>
+        </TextBlock>
+    </StackPanel>
+</Window>
